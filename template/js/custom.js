@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 
     $('#slider').flexslider({
         animation: "slide"
-    });
+    }); 
 
     // Select Box Replacements
 
@@ -64,7 +64,7 @@ jQuery(document).ready(function($) {
         columnWidth: '.grid-sizer',
         percentPosition: true,
         gutter: 0
-    });
+    }); 
 
     // Counter
 
