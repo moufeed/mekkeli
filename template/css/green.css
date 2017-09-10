@@ -28,9 +28,8 @@
     }
     .icheckbox_square-green.checked.disabled {
         background-position: -96px 0;
-    } 
- 
-.iradio_square-green {
+    }
+.iradio_square-green {  
     background-position: -120px 0;
 }
     .iradio_square-green.hover { 
