@@ -5,10 +5,622 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>mekkli</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="main-header ">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="search-box">
+                    <nav class="social">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-vimeo"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-skype"></i></a>
+                    </nav>
+                    <form class="form-inline search-form">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                          </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-menu">
+            <div class="container">
+                    <nav class="navbar collapse navbar-collapse" id="mobile-menu">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">Properties</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="properties-grid.html">Properties Grid</a></li>
+                                        <li><a href="properties-list.html">Properties List</a></li>
+                                        <li><a href="properties-map.html">Properties Map</a></li>
+                                        <li><a href="properties-single.html">Properties Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="services.html">Services Page</a></li>
+                                        <li><a href="services-single.html">Preparation of Documents</a></li>
+                                        <li><a href="services-single.html">Design Projects</a></li>
+                                        <li><a href="services-single.html">Repair of Apartments</a></li>
+                                        <li><a href="services-single.html">Utility Services</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">Page</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="team-single.html">Team Single</a></li>
+                                        <li><a href="typography.html">Typography</a></li>
+                                        <li><a href="error.html">404 Error</a></li>
+                                        <li><a href="offline.html">Site Offline</a></li>
+                                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="blog.html">Blog Posts</a></li>
+                                        <li><a href="blog-post.html">Single Post</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </nav>
+            </div>
+        </div>
+    </header>
+ <!-- SLIDER -->
+ <div class="flexslider main-slider" id="slider">
+    <ul class="slides">
+        <li>
+            <img src="images/slider1.jpg" class="img-responsive" alt="Slider Image" />
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="detail">
+                            <div class="white">
+                                <h2><a href="">House<br>with Ghosts</a></h2>
+                                <span class="slide-location">South Beach, Miami (USA)</span>
+                                <div class="bar"></div>
+                                <span class="slide-price">$ 1 525 000</span>
+                            </div>
+                            <div class="red">
+                                <span class="bath">3 Bathroom</span>
+                                <span class="bed">2 Bedrooms</span>
+                                <span class="gym">1 Gym</span>
+                                <span class="pool">2 Pool</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/slider2.jpg" class="img-responsive" alt="Slider Image" />
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="detail">
+                            <div class="white">
+                                <h2>House<br>with Ghosts</h2>
+                                <span class="slide-location">South Beach, Miami (USA)</span>
+                                <div class="bar"></div>
+                                <span class="slide-price">$ 1 525 000</span>
+                            </div>
+                            <div class="red">
+                                <span class="bath">3 Bathroom</span>
+                                <span class="bed">2 Bedrooms</span>
+                                <span class="gym">1 Gym</span>
+                                <span class="pool">2 Pool</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- SLIDER -->
+  <!-- FILTER -->
+  <div class="container">
+    <div class="filter main-filter">
+         
+            <h4>Find your dream home</h4>
+       
+        <select class="location">
+            <option>Location</option>
+            <option>London</option>
+            <option>Paris</option>
+            <option>New York</option>
+        </select>
+
+        <select class="cata">
+            <option>Category</option>
+            <option>Land</option>
+            <option>Plots</option>
+            <option>Commercial</option>
+        </select>
+
+        <select class="type">
+            <option>Type</option>
+            <option>Buy</option>
+            <option>Sell</option>
+            <option>Rent</option>
+        </select>
+
+        <select class="type">
+            <option>Type</option>
+            <option>Buy</option>
+            <option>Sell</option>
+            <option>Rent</option>
+        </select>
+
+        <button type="button" class="btn"><i class="fa fa-search"></i>Search</button>
+
+        <div class="range">
+            <p>
+              <label for="price">Price</label>
+              <span>$ <input type="text" id="price" ></span>
+            </p>
+            <div id="price-range"></div>
+        </div>
+
+        <a href="#" class="adv-srch">Advance Search</a>
+
+    </div>
+</div>
+<!-- FILTER -->
+
+<!-- about us  -->
+    <div class="container about-section">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 p-0">
+                <article class="company-brief">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cumque ut 
+                        veritatis odio? Est et maiores rerum neque. Sed necessitatibus molestiae nostrum 
+                        nobis! Similique dolor sit aliquid laudantium adipisci unde.
+                    </p>
+                    <a href="" class="more">More..</a>
+                </article>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 p-0">
+                <div class="support-box">
+                    <img src="images/support.jpg" alt="">
+                    <a href="">Our Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- about us  -->
+<!-- services -->
+<section class="services-section">
+<div class="container">
+        <div class="header">
+            <h2>Our Services</h2>
+        </div>
+    <div class="row">
+        <div class="col-sm-4 col-xs-12">
+            <div class="service">
+                <img src="images/service-bg-1.jpg" alt="" class="bg">
+                <img src="images/service-icon-1.png" alt="" class="ico">
+                <strong>Lorem ipsum dolor sit.</strong>
+            </div>
+        </div>
+       
+        <div class="col-sm-4 col-xs-12">
+            <div class="service">
+                <img src="images/service-bg-2.jpg" alt="" class="bg">
+                <img src="images/service-icon-2.png" alt="" class="ico">
+                <strong>Lorem ipsum dolor sit.</strong>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="service">
+                <img src="images/service-bg-3.jpg" alt="" class="bg">
+                <img src="images/service-icon-3.png" alt="" class="ico">
+                <strong>Lorem ipsum dolor sit.</strong>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- services -->
+<!-- offers -->
+<section class="offers-section">
+    <div class="header">
+        <h2>Latest Offers</h2>
+    </div>
+    <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="item-header clearfix">
+                            <h3><a href="#">Los Angles Apartment</a></h3>
+                           
+                        </div>
+                        <figure>
+                            <img src="images/items/1.jpg" alt="" class="img-responsive">
+                            <span class="label sale">Sell</span>
+                            <div class="overlay">
+                                <a href="#" class="btn btn-detail">Detail</a>
+                            </div>
+                        </figure>
+                        <div class="item-detail">
+                            <div class="left">
+                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
+                                <span class="bed">3</span>
+                                <span class="bath">2</span>
+                                <span class="garage">2</span>
+                                <span class="gym">1</span>
+                            </div>
+                            <div class="right">
+                                <span class="area">134 m2</span>
+                                <span class="price">$ 870000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="item-header clearfix">
+                            <h3><a href="#">Los Angles Apartment</a></h3>
+                           
+                        </div>
+                        <figure>
+                            <img src="images/items/2.jpg" alt="" class="img-responsive">
+                            <span class="label rent">Rent</span>
+                            <div class="overlay">
+                                <a href="#" class="btn btn-detail">Detail</a>
+                            </div>
+                        </figure>
+                        <div class="item-detail">
+                            <div class="left">
+                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
+                                <span class="bed">3</span>
+                                <span class="bath">2</span>
+                                <span class="garage">2</span>
+                                <span class="gym">1</span>
+                            </div>
+                            <div class="right">
+                                <span class="area">134 m2</span>
+                                <span class="price">$ 870000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="item-header clearfix">
+                            <h3><a href="#">Los Angles Apartment</a></h3>
+                           
+                        </div>
+                        <figure>
+                            <img src="images/items/3.jpg" alt="" class="img-responsive">
+                            <span class="label rent">Rent</span>
+                            <div class="overlay">
+                                <a href="#" class="btn btn-detail">Detail</a>
+                            </div>
+                        </figure>
+                        <div class="item-detail">
+                            <div class="left">
+                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
+                                <span class="bed">3</span>
+                                <span class="bath">2</span>
+                                <span class="garage">2</span>
+                                <span class="gym">1</span>
+                            </div>
+                            <div class="right">
+                                <span class="area">134 m2</span>
+                                <span class="price">$ 870000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="item-header clearfix">
+                            <h3><a href="#">Los Angles Apartment</a></h3>
+                           
+                        </div>
+                        <figure>
+                            <img src="images/items/4.jpg" alt="" class="img-responsive">
+                            <span class="label hot">Hot</span>
+                            <div class="overlay">
+                                <a href="#" class="btn btn-detail">Detail</a>
+                            </div>
+                        </figure>
+                        <div class="item-detail">
+                            <div class="left">
+                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
+                                <span class="bed">3</span>
+                                <span class="bath">2</span>
+                                <span class="garage">2</span>
+                                <span class="gym">1</span>
+                            </div>
+                            <div class="right">
+                                <span class="area">134 m2</span>
+                                <span class="price">$ 870000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="item-header clearfix">
+                            <h3><a href="#">Los Angles Apartment</a></h3>
+                           
+                        </div>
+                        <figure>
+                            <img src="images/items/5.jpg" alt="" class="img-responsive">
+                            <span class="label rent">Rent</span>
+                            <div class="overlay">
+                                <a href="#" class="btn btn-detail">Detail</a>
+                            </div>
+                        </figure>
+                        <div class="item-detail">
+                            <div class="left">
+                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
+                                <span class="bed">3</span>
+                                <span class="bath">2</span>
+                                <span class="garage">2</span>
+                                <span class="gym">1</span>
+                            </div>
+                            <div class="right">
+                                <span class="area">134 m2</span>
+                                <span class="price">$ 870000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="item-header clearfix">
+                            <h3><a href="#">Los Angles Apartment</a></h3>
+                           
+                        </div>
+                        <figure>
+                            <img src="images/items/6.jpg" alt="" class="img-responsive">
+                            <span class="label sale">Sell</span>
+                            <div class="overlay">
+                                <a href="#" class="btn btn-detail">Detail</a>
+                            </div>
+                        </figure>
+                        <div class="item-detail">
+                            <div class="left">
+                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
+                                <span class="bed">3</span>
+                                <span class="bath">2</span>
+                                <span class="garage">2</span>
+                                <span class="gym">1</span>
+                            </div>
+                            <div class="right">
+                                <span class="area">134 m2</span>
+                                <span class="price">$ 870000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</section>
+<!-- offers -->
+<!-- projects -->
+
+<section class="projects-section">
+    <div class="header">
+        <h2>Projects</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-12 col-sm-4">
+                <div class="project">
+                        <figure>
+                             <a href="">  <img src="images/projects/1.jpg" alt=""></a> 
+                        </figure>
+                        <div class="project-info">
+                            <span class="price">$390,000 - $430,000</span>
+                            <h4><a href="#" class="name">Avalon Clinton Apartments - Last offer live</a></h4>
+                            <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                        </div>  
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-4">
+                    <div class="project">
+                            <figure>
+                                 <a href="">  <img src="images/projects/2.jpg" alt=""></a> 
+                            </figure>
+                            <div class="project-info">
+                                <span class="price">$390,000 - $430,000</span>
+                                <h4><a href="#" class="name">Avalon Clinton Apartments - Last offer live</a></h4>
+                                <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                            </div>  
+                    </div>
+             </div>
+            <div class="col-md-3 col-xs-12 col-sm-4">
+                    <div class="project">
+                            <figure>
+                                 <a href="">   <img src="images/projects/3.jpg" alt=""></a>
+                            </figure>
+                            <div class="project-info">
+                                <span class="price">$390,000 - $430,000</span>
+                                <h4><a href="#" class="name">Ingram Dayton, OH 45408</a></h4>
+                                <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                            </div>  
+                    </div>
+             </div>
+            <div class="col-md-3 col-xs-12 col-sm-4">
+                    <div class="project">
+                            <figure>
+                               <a href="">    <img src="images/projects/4.jpg" alt=""></a> 
+                            </figure>
+                            <div class="project-info">
+                                <span class="price">$390,000 - $430,000</span>
+                                <h4><a href="#" class="name">Penns Neck, NJ 08540</a></h4>
+                                <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                            </div>  
+                    </div>
+             </div>
+            <div class="col-md-3 col-xs-12 col-sm-4">
+                    <div class="project">
+                            <figure>
+                                <a href="">   <img src="images/projects/5.jpg" alt=""></a> 
+                            </figure>
+                            <div class="project-info">
+                                <span class="price">$390,000 - $430,000</span>
+                                <h4><a href="#" class="name">Court Bellflower, CA 90706</a></h4>
+                                <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                            </div>  
+                    </div>
+             </div>
+            <div class="col-md-3 col-xs-12 col-sm-4">
+                    <div class="project">
+                            <figure>
+                                    <a href=""><img src="images/projects/6.jpg" alt=""></a>
+                            </figure>
+                            <div class="project-info">
+                                <span class="price">$390,000 - $430,000</span>
+                                <h4><a href="#" class="name">Luxury Villa In Rego Park</a></h4>
+                                <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                            </div>  
+                    </div>
+             </div>
+            <div class="col-md-3 col-xs-12 col-sm-4">
+                    <div class="project">
+                            <figure>
+                                  <a href=""> <img src="images/projects/7.jpg" alt=""></a> 
+                            </figure>
+                            <div class="project-info">
+                                <span class="price">$390,000 - $430,000</span>
+                                <h4><a href="#" class="name">Luxury Office - Last offer live</a></h4>
+                                <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                            </div>  
+                    </div>
+             </div>
+            <div class="col-md-3 col-xs-12 col-sm-4">
+                    <div class="project">
+                            <figure>
+                                   <a href=""> <img src="images/projects/8.jpg" alt=""></a>
+                            </figure>
+                            <div class="project-info">
+                                <span class="price"> $430,000</span>
+                                <h4><a href="#" class="name">1B Alexander Court, Lewisham, Tas 7173</a></h4>
+                                <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                            </div>  
+                    </div>
+             </div>
+                
+        </div>
+    </div>
+</section>
+<!-- projects -->
+<!-- separator --> 
+<div class="page-separator"></div>
+<!-- separator -->
+<!-- map -->
+    <div id="mapcanvas" style="height:400px"></div>
+<!-- map -->
+
+<footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                        <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Properties</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                        </ul>
+                </div>
+                <div class="col-xs-12 copy-right text-center">
+                    <div class="backtotop">
+                            <button class="btn scroltop">
+                                    <i class="fa fa-angle-up"></i>
+                            </button>
+                    </div>
+                    <p class="">Copyright © 2017 mekkeli real estate, Inc. All Right Reserved.</p>
+                    <nav class="social">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-vimeo"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-skype"></i></a>
+                        </nav>
+                </div>
+            </div>
+             
+        </div>
+    </footer>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>  
     <script src="js/scripts.js"></script>
+    <script>
+ jQuery(document).ready(function($){
+    
+        var marker;
+        var map;
+    
+        function initialize() {
+            var lat = '-37.817314';
+            var lng = '144.955431';
+            var Latlng = new google.maps.LatLng(lat,lng);
+            var mapOptions = {
+                zoom: 18,
+                center: Latlng
+            }
+            map = new google.maps.Map(document.getElementById('mapcanvas'),
+                mapOptions);
+            var image = 'images/mapicon.png';
+            marker = new google.maps.Marker({
+                position: Latlng,
+                map: map,
+                icon: image,
+                animation: google.maps.Animation.DROP,
+                draggable: true
+            });
+            google.maps.event.addListener(marker, 'click', toggleBounce);
+        }
+    
+        function toggleBounce() {
+            if (marker.getAnimation() != null) {
+                marker.setAnimation(null);
+            } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
+        }
+    
+        google.maps.event.addDomListener(window, 'load', initialize);
+    
+    });
+</script>
 </body>
 </html>

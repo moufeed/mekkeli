@@ -1,1 +1,15 @@
-@import '../css/styles';
+$lightgold :#f1da78;
+$darkgold : #dfb406;
+$darkgray :#383c3f;
+$darkcolor : #1d2527;
+$brown :#936829;
+$lightbrown :#cda045;
+$black :#000;
+$white:#fff;
+$yellow : #f6e803;
+@import 
+'../css/template',
+'partlials/header',
+'partlials/sections',
+'partlials/override'
+;

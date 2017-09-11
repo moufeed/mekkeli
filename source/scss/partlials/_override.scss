@@ -1,0 +1,51 @@
+
+.main-filter{
+    h4{
+        color: $yellow; 
+        margin-bottom: 15px;
+    }
+}
+ 
+.page-separator{
+    background: $brown url('../images/separator.png') 0 0 / 70px repeat;
+    @include size(100% , 50px);
+}
+
+
+.main-footer{
+    padding-bottom: 40px;
+}
+.copy-right{
+    margin-top: 50px;
+    .backtotop{
+        margin-bottom: 50px;
+         &:after{
+             content: '';
+             @include absolute(top left ,15px 0);
+             @include size(100%,1px);
+             background: lighten($black,30%);
+             z-index: 0;
+         }
+         .btn{
+             position: relative;
+             z-index: 1;
+             border-radius: 0;
+             background:$lightbrown ;
+             color: $black;
+         }
+    }
+    p{
+        margin-bottom: 35px;
+    }
+    .social{
+        a{
+             
+            @include square(35px);
+            display: inline-block;
+            &:hover{
+                color: darken($yellow,5%);
+            }
+        }
+    }
+}
+ 

@@ -11,7 +11,13 @@ var config = {
     jsFiles: [
         './template/js/jquery-1.11.3.min.js',
         './template/js/bootstrap.min.js',
+        './template/js/jquery-ui.js',
+        './template/js/icheck.js',
         './template/js/jquery.flexslider-min.js',
+        './template/js/jquery.selectBox.min.js',
+        './template/js/masonry.pkgd.min.js',
+        './template/js/counter.animation.js',
+        './template/js/jquery.appear.js',
         './template/js/custom.js',
     ],
     jsDest: './source/js/',
@@ -22,7 +28,7 @@ var config = {
         './template/css/jquery-ui.css',
         './template/css/jquery.selectBox.css',
         './template/css/pace-minimal.css',
-        './template/css/style.css',
+        './template/css/style.css', 
         './source/css/custom.css',
         './template/css/responsive.css',
     ],
@@ -48,9 +54,6 @@ var config = {
     }
 };
 
-
-
-
 gulp.task('js', () => {
     return gulp.src(config.jsFiles)
         .pipe(concat('scripts.js'))
@@ -68,7 +71,6 @@ gulp.task('css', () => {
         });
 })
 
-
 gulp.task('sass', () => {
     return gulp.src('./source/scss/**/*.scss')
         .pipe(sass({
@@ -76,8 +78,6 @@ gulp.task('sass', () => {
         }).on('error', sass.logError))
         .pipe(gulp.dest(config.cssDest))
 });
-
-
 
 gulp.task('watch', () => {
     gulp.watch(config.watch.css, ['css']);
@@ -107,9 +107,7 @@ gulp.task('copy:js', () => {
 
 gulp.task('copyFiles', ['copy:html', 'copy:fonts', 'copy:images', 'copy:css', 'copy:js']);
 
-
 gulp.task('default', ['js', 'css', 'watch']);
-
 
 gulp.task('build', ['js', 'css', 'sass'], () => {
     gulp.start('copyFiles');
