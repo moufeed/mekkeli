@@ -1,0 +1,29 @@
+
+.team-posts.results{
+    margin-top: 45px;
+    .post {
+        background: $white;
+        box-shadow: 0 2px 2px -2px rgba($black,.3);
+        figure{
+            height: 205px;
+            float: $left;
+            img{ 
+                @include size(200px,250px);
+            }
+        }
+        article{ 
+            width: calc(100% - 220px);
+            padding: 20px;
+            float: $left;
+            h3{
+                font-size: 22px;
+                margin-bottom: 5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            p{
+                margin-bottom: 15px;
+            }
+        } 
+    }
+}

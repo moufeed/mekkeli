@@ -19,6 +19,7 @@ var config = {
         './template/js/counter.animation.js',
         './template/js/jquery.appear.js',
         './template/js/custom.js',
+        
     ],
     jsDest: './source/js/',
     cssFiles: [
@@ -30,6 +31,7 @@ var config = {
         './template/css/pace-minimal.css',
         './template/css/style.css', 
         './source/css/custom.css',
+        './source/plugins/lightslider-master/css/lightslider.css',
         './template/css/responsive.css',
     ],
     cssDest: './source/css/',

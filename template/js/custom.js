@@ -73,12 +73,12 @@ jQuery(document).ready(function($) {
         percentPosition: true,
         gutter: 0
     }); 
- }
+ } 
     
  
     // Counter
-if( $('.counter span') &&  $('.counter span').length > 0){
-    $(function() {
+if( $('.counter span') &&  $('.counter span').length > 0){ 
+    $(function() { 
         var value; 
         $('.counter span').appear();
         $(document.body).on('appear', '.counter span', function(e, $affected) {
@@ -90,4 +90,5 @@ if( $('.counter span') &&  $('.counter span').length > 0){
     });
     $('.animated').appear();
 }
+
 });

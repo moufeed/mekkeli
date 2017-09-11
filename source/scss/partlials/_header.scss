@@ -1,8 +1,23 @@
 .main-header{
+        
     .search-box{
         float: $right;
         text-align: center;
         margin: 20px 0;
+        @media screen  and (max-width:767px){
+            float: none;
+        }
+        .input-group{
+            @media screen  and (max-width:767px){
+                 width: 100%;
+                 input{
+                     width: 75%;
+                 }
+            } 
+            .btn{
+                padding: 9px 15px;
+            }
+        }
     }
     .social{
         

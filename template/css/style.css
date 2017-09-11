@@ -162,8 +162,10 @@ header .dropdown-menu { float: none; margin: 0; display: none; top: 50px; left: 
 header .dropdown-menu li a { font-size: 12px; padding: 12px 25px; color: #727272; background: #fff; text-transform: uppercase; }
 header .dropdown-menu li a:hover { background: #ffeb3b; }
 
-header .navbar-toggle { margin: 5px 0 27px; }
+header:not(.main-header) .navbar-toggle { margin: 5px 0 27px; }
 header .navbar-toggle .icon-bar { background: #936829; }
+header.main-header .navbar-toggle .icon-bar { background: #fff; }
+
 
 header .user { padding-bottom: 35px; display: inline-block; position: relative; margin-top: 3px; float: right; }
 header .user a:focus, 
@@ -391,7 +393,7 @@ top:135px;
 .personal-agent article h2 { font-size: 30px; font-weight: 600; color: #fff; margin-bottom: 15px; text-transform: uppercase; }
 .personal-agent article p { font-size: 16px; color: #ffffff; line-height: 28px; display: block; margin-bottom: 35px; }
 
-.history { margin: 80px 0 120px; background: url(../images/banner-history.png) no-repeat -226px 10px; background-size: cover; padding: 85px 0; }
+.history { margin: 70px 0 ; background: url(../images/banner-history.png) no-repeat -226px 10px; background-size: cover; padding: 85px 0; }
 .history h3 { font-size: 30px; color: #212121; text-transform: uppercase; margin-bottom: 25px; }
 .history p { font-size: 16px; color: #727272; line-height: 28px; margin-bottom: 30px; }
 
@@ -471,7 +473,7 @@ top:135px;
 ****************************************************************************/
 
 .rewiews { padding: 115px 0; text-align: center; }
-.page-wrap .rewiews { padding-bottom: 45px; }
+.page-wrap .rewiews { padding: 45px 0; }
 .rewiews img { width: 30px; height: 30px; border-radius: 50%; margin: 0 auto 10px; display: block; }
 .rewiews h6 { font-size: 12px; color: #727272; padding-bottom: 30px; text-transform: uppercase; border-bottom: 2px solid #936829; display: inline-block; margin-bottom: 40px;}
 .rewiews p { font-size: 16px; color: #727272; line-height: 28px; }

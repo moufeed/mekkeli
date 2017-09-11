@@ -14,9 +14,9 @@
 @media only screen and (min-width: 992px) and (max-width: 1200px)
 {
 
-    header .logo { margin-bottom: 26px; }
-    /*header .navbar { float: right; }*/
-	header .navbar-nav > li:last-child { margin-right: 0; }
+    header:not(.main-header) .logo { margin-bottom: 26px; }
+    /*header:not(.main-header) .navbar { float: right; }*/
+	header:not(.main-header) .navbar-nav > li:last-child { margin-right: 0; }
 
 	.filter .selectBox.location,
 	.filter .selectBox.cata { width: 171px !important; }
@@ -65,11 +65,11 @@
 @media only screen and (min-width: 769px) and (max-width: 991px)
 {
 
-    header .logo { margin-bottom: 26px; }
-    /*header .navbar { float: right; }*/
-    header .navbar-nav > li:last-child { margin-right: 0; }
-    header .navbar-nav > li { margin-right: 30px; }
-    /*header .navbar { margin-left: 0 !important; }*/
+    header:not(.main-header) .logo { margin-bottom: 26px; }
+    /*header:not(.main-header) .navbar { float: right; }*/
+    header:not(.main-header) .navbar-nav > li:last-child { margin-right: 0; }
+    header:not(.main-header) .navbar-nav > li { margin-right: 30px; }
+    /*header:not(.main-header) .navbar { margin-left: 0 !important; }*/
 
     .filter .selectBox.location,
     .filter .selectBox.cata { width: 308px !important; margin-bottom: 20px; }
@@ -115,30 +115,33 @@
 @media only screen and (min-width: 769px) and (max-width: 879px)
 {
 
-    header .navbar { margin-left: 50px !important; }
-    header .navbar li { margin-right: 20px; }
+    header:not(.main-header) .navbar { margin-left: 50px !important; }
+    header:not(.main-header) .navbar li { margin-right: 20px; }
 
 }
 
 
 @media only screen and (max-width: 768px)
 {
-
-    body:not(.offline) header .adress,
-    body:not(.offline) header .phone { display: none; }
-    header .right-side { margin-top: 5px; margin-left: 20px; }
-    header .nav > li.active > a:before { display: none; }
-    header .navbar-toggle { display: block; margin: 0 0 27px; }
-    header .collapse { display: none; }
-    header .navbar { float: none; clear: both; margin: 0 !important; width: 100%; }
-    header .navbar { position: absolute; top: 80px; left: 0; background: #fff; width: 100%; z-index: 999; }
-    header .navbar .navbar-nav { margin: 0; padding: 0 0 20px; width: 100%; }
-    header .navbar li { margin: 0; padding: 0; float: none; }
-    header .navbar li a { padding: 12px 25px !important; display: block; }
-    header .navbar .dropdown-menu { position: static; width: 100%; padding: 0; margin: 0; left: 0; }
-    header .navbar-nav > li:last-child { margin-right: 0; }
-    header .navbar { margin-left: 0 !important; }
-
+    .flexslider.main-slider, .flexslider.main-slider .slides img{
+        height: auto;
+        min-height: 200px; 
+    }
+    body:not(.offline) header:not(.main-header) .adress,
+    body:not(.offline) header:not(.main-header) .phone { display: none; }
+    header:not(.main-header) .right-side { margin-top: 5px; margin-left: 20px; }
+    header:not(.main-header) .nav > li.active > a:before { display: none; }
+    header:not(.main-header) .navbar-toggle { display: block; margin: 0 0 27px; }
+    header:not(.main-header) .collapse { display: none; }
+    header:not(.main-header) .navbar { float: none; clear: both; margin: 0 !important; width: 100%; }
+    header:not(.main-header) .navbar { position: absolute; top: 80px; left: 0; background: #fff; width: 100%; z-index: 999; }
+    header:not(.main-header) .navbar .navbar-nav { margin: 0; padding: 0 0 20px; width: 100%; }
+    header:not(.main-header) .navbar li { margin: 0; padding: 0; float: none; }
+    header:not(.main-header) .navbar li a { padding: 12px 25px !important; display: block; }
+    header:not(.main-header) .navbar .dropdown-menu { position: static; width: 100%; padding: 0; margin: 0; left: 0; }
+    header:not(.main-header) .navbar-nav > li:last-child { margin-right: 0; }
+    header:not(.main-header) .navbar { margin-left: 0 !important; }
+    header.main-header .navbar-nav { margin: 7.5px 0; }
     .top-bar { text-align: center; }
     .top-bar .text,
     .top-bar .social { float: none; }
@@ -172,9 +175,9 @@
 
     .coming-soon .error-page { padding-bottom: 100px; }
     .offline .page-wrap { padding-top: 140px; }
-    .offline header .logo { float: none; }
-    .offline header .left-side { float: none; text-align: center; }
-    .offline header .right-side { margin: 20px 0 0; float: none; text-align: center; }
+    .offline header:not(.main-header) .logo { float: none; }
+    .offline header:not(.main-header) .left-side { float: none; text-align: center; }
+    .offline header:not(.main-header) .right-side { margin: 20px 0 0; float: none; text-align: center; }
     .offline footer .copy-right { margin: 0; }
 
 }

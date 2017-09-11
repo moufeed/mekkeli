@@ -24,6 +24,10 @@
 }
 .about-section{
     margin-bottom: 25px;
+    &.container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .company-brief{
         background: $brown;
         height: 250px;
@@ -41,6 +45,7 @@
             -webkit-box-orient: vertical;
             color: $white;
             font-weight:lighter;
+            overflow: hidden;
         }
         .more{
             float: $right;
@@ -133,8 +138,14 @@
             @include size(100%,290px);
             overflow: hidden;
             position: relative;
+            @media screen and (max-width:767px){
+              height: auto;
+            }
             img{
-                @include transition(all .40s)
+                @include transition(all .40s); 
+                @media screen and (max-width:767px){
+                    width: 100%;
+                }
             }
             &:hover{
               img{
