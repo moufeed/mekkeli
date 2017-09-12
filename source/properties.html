@@ -156,10 +156,17 @@
     
                                     <hr>
     
-                                    <div class="check-box">
-                                        <label><input type="checkbox" class="checkbox">Garage</label>
-                                        <label><input type="checkbox" class="checkbox" checked>Gymnasium</label>
-                                        <label><input type="checkbox" class="checkbox">Swimming Pool</label>
+                                    <div class="check-box main-checkbox">
+                                        <input type="checkbox" id="Garage" name="check" value="" />
+                                        <label for="Garage"><span></span>Garage</label>
+
+                                        <input type="checkbox" id="Gymnasium" name="check" value="" />
+                                        <label for="Gymnasium"><span></span>Gymnasium</label>
+
+                                        <input type="checkbox" id="Swimming_Pool" name="check" value="" />
+                                        <label for="Swimming_Pool"><span></span>Swimming Pool</label>
+
+                                       
                                     </div>
     
                                     <div class="range">
@@ -179,7 +186,7 @@
     
                                     <div class="buttons">
                                         <button class="btn btn-danger"><i class="fa fa-search"></i>Search</button>
-                                        <button class="btn btn-clear">Clear</button>
+                                         
                                     </div>
     
                                 </form>

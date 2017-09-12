@@ -132,3 +132,121 @@ $x :5;
         border-color: $brown;
     }
 }
+.history p{
+    max-width: 50%;
+}
+
+.main-checkbox{
+    label {
+        display: inline-block;  
+        color: $black;
+        cursor: pointer;
+        position: relative;  
+      
+        
+      
+        span {
+          display: inline-block;
+          position: relative;
+          background-color: transparent;
+          @include square(20px);
+          transform-origin: center;
+          border: 2px solid $darkgold ;
+          border-radius: 50%;
+          vertical-align: -6px;
+          margin-#{$right}: 10px;
+          transition: background-color 150ms 200ms, transform 350ms cubic-bezier(.78,-1.22,.17,1.89);  
+      
+       
+      
+        &:before {
+          content: "";
+          width: 0px;
+          height: 2px;
+          border-radius: 2px;  
+          background:$darkgold;
+          position: absolute;
+          transform: rotate(45deg);
+          top: 8px;  
+          left: 4px ;
+          transition: width 50ms ease 50ms;
+          transform-origin: 0% 0%;
+        }
+      
+        &:after {
+          content: "";
+          width: 0;
+          height: 2px;
+          border-radius: 2px;  
+          background: $darkgold;
+          position: absolute;
+          transform: rotate(305deg);
+          top: 12px;  
+          left: 6px;  
+          transition: width 50ms ease;
+          transform-origin: 0% 0%;
+        }
+      }
+       
+      
+      &:hover {
+        span {
+          &:before {
+            width: 5px;
+            transition: width 100ms ease;
+          }
+          
+          &:after {
+            width: 10px;
+            transition: width 150ms ease 100ms;
+          }
+        }
+      }
+    }
+    
+    input[type="checkbox"] {
+        display: none;  
+      
+       
+      
+      &:checked {
+        + label {
+          span {
+            background-color: $darkgold;
+            transform: scale(1.25); // enlarge the box
+            
+            &:after {
+              width: 10px;
+              background:$white;
+              transition: width 150ms ease 100ms; // enlarge the tick
+            }
+            
+            &:before {
+              width: 5px;
+              background:$white;
+              transition: width 150ms ease 100ms; // enlarge the tick
+            }
+          }
+          
+          &:hover { // copy the states for onMouseOver to avoid flickering
+            span {
+              background-color: $darkgold;
+              transform: scale(1.25); // enlarge the box
+    
+              &:after {
+                width: 10px;
+                background: $white;
+                transition: width 150ms ease 100ms; // enlarge the tick
+              }
+    
+              &:before {
+                width: 5px;
+                background: $white;
+                transition: width 150ms ease 100ms; // enlarge the tick
+              }
+            }  
+          }
+        }
+      }
+    }
+}

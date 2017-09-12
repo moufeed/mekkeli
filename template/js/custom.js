@@ -58,12 +58,14 @@ jQuery(document).ready(function($) {
     $( "#price" ).val( $( "#price-range" ).slider( "values", 0 ) + " - " + $( "#price-range" ).slider( "values", 1 ) );
 
     // Checkbox Replacements
-
-    $('input.checkbox').iCheck({
+  if( jQuery().iCheck && $('input.checkbox').length > 0 ){
+    $('input.checkbox').iCheck({ 
         checkboxClass: 'icheckbox_square-green',
         radioClass: 'iradio_square-green',
         increaseArea: '20%'
     });
+  }
+    
 
     // Gallery Grid
  if($('.grid') && $('.grid').length > 0){

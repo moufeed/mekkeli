@@ -1,0 +1,160 @@
+@font-face {
+    font-family: droid;
+    src: url('../fonts/DroidSansArabic.ttf');
+}
+
+body{
+   font: 12px droid ,"Open Sans", Arial, Helvetica, sans-serif;
+   text-align: right;
+}
+h1, h2, h3, h4, h5, h6 ,
+.filter .selectBox,
+.selectBox-options Li a
+{
+    font-family: droid ,"Open Sans", Arial, Helvetica, sans-serif;
+}
+
+#slider .detail {
+    left: auto;
+    right: 15px;
+}
+#slider .detail .red, #slider .detail .white{
+    float: right;
+}
+#slider .detail .red{
+    padding: 35px;
+}
+#slider .detail .red span.bath ,
+#slider .detail .red span.bed  ,
+#slider .detail .red span.gym  ,
+#slider .detail .red span.pool {
+    background-position-x: right;
+}
+#slider .detail .white .slide-location{
+    background-position-x: right;
+    padding-right: 20px;
+    padding-left: 0;
+}
+#slider .detail .red span {
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+
+.filter .selectBox-dropdown .selectBox-label{
+    text-align: right;
+}
+.filter .selectBox-dropdown .selectBox-arrow {
+     
+    left: 10px;
+    right: auto;
+}
+.filter .btn{
+    margin-left: 0;
+    margin-right: 33px;
+    i{
+        margin-left: 10px;
+        margin-right: 0;
+    }
+}
+.filter .adv-srch{
+    right: auto;
+    left: 40px;
+}
+
+
+
+ 
+
+ 
+.item .item-header h3 {  float: right;  }
+.item .item-header span i { margin-left: 10px;margin-right: 0; }
+.item .item-header .favorite { float: left; }
+
+
+
+.item figure .label { right: auto;left: 20px; }
+
+
+
+.item .item-detail span { 
+    padding-left: 0;
+    padding-right: 20px;
+     margin-left: 20px;
+     margin-right: 0;
+     }
+.item .item-detail span i { margin-right: 0; margin-left: 10px;}
+.item .item-detail .left { float: right; }
+.item .item-detail .right { text-align: left; float: left; }
+
+
+.item .item-detail .bath ,
+.item .item-detail .bed  ,
+.item .item-detail .garage  ,
+.item .item-detail .gym  ,
+.item .item-detail .area  ,
+.property-data .prop-features ,
+.property-data .prop-features .bed ,
+.property-data .prop-features .garage ,
+.property-data .prop-features .gym ,
+.property-data .prop-features .kitchen ,
+.property-data .prop-features .location ,
+.property-data .prop-features .bath,
+.property-data .prop-features .area
+{ background-position-x: right; }
+.item .item-detail .price { 
+            padding-right: 0;
+            font-family: droid ,"Ubuntu", Arial, Helvetica, sans-serif;
+            margin-left: 0;}
+
+.property-search{
+    .selectBox{
+        text-align: right;
+    }
+    .selectBox-dropdown{
+        .selectBox-arrow{
+            background-position-x: left;
+            right: auto;
+            left: 10px;
+        }
+    }
+}
+
+
+.pagination a.prev{
+    float: right;
+    .fa-angle-left{
+        margin: 0 3px;
+        &:before{
+            content: "\f105";
+        }
+    }
+}
+.pagination a.next{
+    float: left;
+    
+    .fa-angle-right{
+        margin: 0 3px;
+        &:before{
+            content: "\f104";
+        }
+    }
+}
+.property-data .prop-features span, .property-data>ul li{
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+ 
+.property-data>ul li{
+    float: right;
+    background-position-x: right;
+}
+.property-data .prop-price .btn{
+    float: left;
+}
+.blog-posts .post article .date{
+    padding-right: 20px;
+    padding-left: 0;
+    background-position-x: right;
+}

@@ -4,6 +4,9 @@
         float: $right;
         text-align: center;
         margin: 20px 0;
+        input.form-control{
+            border-radius: 0;
+        }
         @media screen  and (max-width:767px){
             float: none;
         }
@@ -15,7 +18,12 @@
                  }
             } 
             .btn{
-                padding: 9px 15px;
+                @include if-ltr{
+                    padding: 9px 15px;
+                }
+                @include if-rtl{
+                    padding: 9px 15px 8px 15px;
+                }
             }
         }
     }
