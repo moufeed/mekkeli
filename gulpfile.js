@@ -5,7 +5,8 @@ var
     concatCss = require('gulp-concat-css'),
     cssmin = require('gulp-cssmin'),
     watch = require('gulp-watch'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    imagemin = require('gulp-imagemin');
 
 var config = {
     jsFiles: [
@@ -38,10 +39,10 @@ var config = {
         js: ['./template/js/*.js'],
         sass: ['./source/scss/**/*.scss']
     },
+    imagesSRC: './source/images/**/*',
     copy: {
         html: './source/*.html',
         fonts: './source/fonts/*',
-        images: './source/images/*',
         css: ['./source/css/style.css','./source/css/style-rtl.css'],
         js: './source/js/*.js'
     },
@@ -78,6 +79,11 @@ gulp.task('sass', () => {
         }).on('error', sass.logError))
         .pipe(gulp.dest(config.cssDest))
 });
+gulp.task('image', () => { 
+    gulp.src(config.imagesSRC)
+    .pipe(imagemin())
+    .pipe(gulp.dest(config.dist.images))
+});
 
 gulp.task('watch', () => {
     gulp.watch(config.watch.css, ['css']);
@@ -93,9 +99,7 @@ gulp.task('copy:fonts', () => {
     gulp.src(config.copy.fonts).pipe(gulp.dest(config.dist.fonts));
 })
 
-gulp.task('copy:images', () => {
-    gulp.src(config.copy.images).pipe(gulp.dest(config.dist.images));
-})
+ 
 
 gulp.task('copy:css', () => {
     gulp.src(config.copy.css).pipe(gulp.dest(config.dist.css));
@@ -105,10 +109,10 @@ gulp.task('copy:js', () => {
     gulp.src(config.copy.js).pipe(gulp.dest(config.dist.js));
 })
 
-gulp.task('copyFiles', ['copy:html', 'copy:fonts', 'copy:images', 'copy:css', 'copy:js']);
+gulp.task('copyFiles', ['copy:html', 'copy:fonts' , 'copy:css', 'copy:js']);
 
 gulp.task('default', ['js', 'css', 'watch']);
 
-gulp.task('build', ['js', 'css', 'sass'], () => {
+gulp.task('build', ['js', 'css', 'sass' , 'image'], () => {
     gulp.start('copyFiles');
 })
