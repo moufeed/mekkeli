@@ -86,7 +86,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flexslider.main-slider,.flexslider.main-slider .slides img {
-    height: 600px;
+    height: 500px;
 }
 
 .flex-viewport {
@@ -149,7 +149,7 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
-  left: 10px;
+  left: 2.5%;
   text-indent: -9999px;
 }
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
@@ -157,7 +157,7 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
-  right: 10px;
+  right:  2.5%;
 }
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;

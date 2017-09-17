@@ -250,3 +250,36 @@ $x :5;
       }
     }
 }
+.social-footer{
+  margin-top:15px; 
+  a{
+    background:$darkgray;
+    @include square(35px);
+    border-radius: 50%;
+    @include makeflex(inline,row,center,center);
+    color: #f2da7a;
+    margin: 0 5px;
+    @include transition(all .33s);
+    font-size: 21px;
+    box-shadow: 0 0 5px 2px  rgba( $black , .6);
+    &:hover{
+      color: $darkgray;
+      background:#f2da7a;
+    }
+  }
+}
+.price-center{
+  display: block;
+  text-align: center;
+}
+.yellow-text{
+  color: $yellow !important;
+}
+
+.main-footer{
+  ol{
+    li{
+      margin-bottom: 5px;
+    }
+  }
+}

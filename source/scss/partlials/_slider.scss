@@ -1,1 +1,50 @@
- 
+.flexslider.main-slider,.flexslider.main-slider .slides img {
+    height: 500px;
+}
+
+.flex-viewport {
+  max-height: 500px; 
+}
+#slider{
+    .slide-detail{
+      z-index: 2;
+      @include absolute(bottom $right,0 0);
+      height: 500px;
+      width: 270px;
+      background: rgba($black, .6);
+      text-align: center;
+      padding: 15px;
+      p{
+        color: $white;
+        font-size: 20px;
+        line-height: 25px;
+      }
+      .readmore{
+          padding:10px 12px;
+          background: $brown;
+          color: $white;
+          margin-top: 15px;
+          border-radius: 0;
+
+      }
+    }
+    .slide-title{
+        @include absolute(bottom $left,200px 0);
+        background: rgba($black, .6);
+        max-width: 360px;;
+        color: $white;
+        padding: 15px;
+        border-#{$left}: 10px solid $brown;
+      h3{
+          font-size: 22px;
+          color: $white;
+          font-weight: lighter;
+      }
+      h4{
+        font-size: 16px;
+        color: $white;
+        font-weight: lighter;
+       }
+    }
+    
+  }

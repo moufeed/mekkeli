@@ -85,22 +85,16 @@
         <li>
             <img src="images/slider1.jpg" class="img-responsive" alt="Slider Image" />
             <div class="container">
-                <div class="row">
+                <div class="clearfix">
                     <div class="col-md-12">
-                        <div class="detail">
-                            <div class="white">
-                                <h2><a href="">House<br>with Ghosts</a></h2>
-                                <span class="slide-location">South Beach, Miami (USA)</span>
-                                <div class="bar"></div>
-                                <span class="slide-price">$ 1 525 000</span>
-                            </div>
-                            <div class="red">
-                                <span class="bath">3 Bathroom</span>
-                                <span class="bed">2 Bedrooms</span>
-                                <span class="gym">1 Gym</span>
-                                <span class="pool">2 Pool</span>
-                            </div>
-                        </div>
+                         <div class="slide-detail ">
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sapiente culpa consequuntur aliquam dicta recusandae totam tenetur nemo quo eos, dolorum quia dolore ut nesciunt exercitationem earum quisquam commodi blanditiis?</p>
+                             <a href="#" class="btn readmore btn-block">read more</a>
+                         </div>
+                         <div class="slide-title">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <h4>aliquam dicta recusandae totam tenetur nemo</h4>
+                         </div>
                     </div>
                 </div>
             </div>
@@ -108,25 +102,19 @@
         <li>
             <img src="images/slider2.jpg" class="img-responsive" alt="Slider Image" />
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="detail">
-                            <div class="white">
-                                <h2>House<br>with Ghosts</h2>
-                                <span class="slide-location">South Beach, Miami (USA)</span>
-                                <div class="bar"></div>
-                                <span class="slide-price">$ 1 525 000</span>
-                            </div>
-                            <div class="red">
-                                <span class="bath">3 Bathroom</span>
-                                <span class="bed">2 Bedrooms</span>
-                                <span class="gym">1 Gym</span>
-                                <span class="pool">2 Pool</span>
-                            </div>
+                    <div class="clearfix">
+                        <div class="col-md-12">
+                             <div class="slide-detail ">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sapiente culpa consequuntur aliquam dicta recusandae totam tenetur nemo quo eos, dolorum quia dolore ut nesciunt exercitationem earum quisquam commodi blanditiis?</p>
+                                 <a href="#" class="btn readmore btn-block">read more</a>
+                             </div>
+                             <div class="slide-title">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <h4>aliquam dicta recusandae totam tenetur nemo</h4>
+                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </li>
     </ul>
 </div>
@@ -134,49 +122,86 @@
   <!-- FILTER -->
   <div class="container">
     <div class="filter main-filter">
-         
             <h4>Find your dream home</h4>
+         <div class="clearfix">
+             <div class="col-md-3 col-sm-4 col-xs-12">
+                 <div class="form-group">
+                     <label for="">Enter Word</label>
+                     <input type="text" name="word" id=""  class="form-control" placeholder="" >
+                 </div>
+             </div>
+             <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                            <label for="">City</label>
+                            <select class="location form-control">
+                                    <option>Location</option>
+                                    <option>London</option>
+                                    <option>Paris</option>
+                                    <option>New York</option>
+                            </select>
+                    </div>
+             </div>
+             <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                            <label for="">type </label>
+                            <select class="cata form-control">
+                                    <option>Category</option>
+                                    <option>Land</option>
+                                    <option>Plots</option>
+                                    <option>Commercial</option>
+                            </select>
+                    </div>
+             </div>
+             <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                            <label for="">status </label>
+                            <select class="type form-control">
+                                    <option>Type</option>
+                                    <option>Buy</option>
+                                    <option>Sell</option>
+                                    <option>Rent</option>
+                                </select>
+                    </div>
+             </div>
+         </div>
+           <div class="clearfix">
+               <div class="col-md-4 col-sm-4 col-xs-12">
+                    
+                    <div class="form-group">
+                            <label for="price">Price ($)</label>
+                            <span> <input type="text" id="price" class="form-control"></span>
+                    </div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                            <label for="area">Area (m2)</label>
+                            <input type="text" name="" id="" class="form-control">
+                    </div>
+               </div>
+               <div class="col-md-2 col-sm-2 col-xs-12">
+                    <div class="form-group">
+                            <label for="area">Rooms</label>
+                            <input type="number" name="" id="" class="form-control">
+                    </div>
+               </div>
+               <div class="col-md-2 col-sm-2 col-xs-12">
+                    <div class="form-group">
+                            <label for="area">Bathrooms</label>
+                            <input type="number" name="" id="" class="form-control">
+                    </div>
+               </div>
+           </div>
+           <div class="clearfix">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div id="price-range" class="m-t-15"></div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12"></div>
+                <div class="col-md-4 col-sm-4 col-xs-12 text-right">
+                        <button type="button" class="btn"><i class="fa fa-search"></i>Search</button>
+                </div>
+           </div>
        
-        <select class="location">
-            <option>Location</option>
-            <option>London</option>
-            <option>Paris</option>
-            <option>New York</option>
-        </select>
-
-        <select class="cata">
-            <option>Category</option>
-            <option>Land</option>
-            <option>Plots</option>
-            <option>Commercial</option>
-        </select>
-
-        <select class="type">
-            <option>Type</option>
-            <option>Buy</option>
-            <option>Sell</option>
-            <option>Rent</option>
-        </select>
-
-        <select class="type">
-            <option>Type</option>
-            <option>Buy</option>
-            <option>Sell</option>
-            <option>Rent</option>
-        </select>
-
-        <button type="button" class="btn"><i class="fa fa-search"></i>Search</button>
-
-        <div class="range">
-            <p>
-              <label for="price">Price</label>
-              <span>$ <input type="text" id="price" ></span>
-            </p>
-            <div id="price-range"></div>
-        </div>
-
-        <a href="#" class="adv-srch">Advance Search</a>
-
+     
     </div>
 </div>
 <!-- FILTER -->
@@ -184,20 +209,22 @@
 <!-- about us  -->
     <div class="container about-section">
         <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12 p-0">
+            <div class="col-md-6 col-sm-6 col-xs-12  ">
+                <h6 class="company-title">Who we are</h6>
                 <article class="company-brief">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cumque ut 
                         veritatis odio? Est et maiores rerum neque. Sed necessitatibus molestiae nostrum 
                         nobis! Similique dolor sit aliquid laudantium adipisci unde.
                     </p>
-                    <a href="" class="more">More..</a>
                 </article>
+                <a href="" class="more">More..</a>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 p-0">
+            <div class="col-md-6 col-sm-6 col-xs-12 ">
+                <h6 class="company-title">Our Support</h6>
                 <div class="support-box">
                     <img src="images/support.jpg" alt="">
-                    <a href="">Our Support</a>
+                    <a href="">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -242,183 +269,63 @@
         <h2>Latest Offers</h2>
     </div>
     <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#">Los Angles Apartment</a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/1.jpg" alt="" class="img-responsive">
-                            <span class="label sale">Sell</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">Detail</a>
-                            </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
-                            </div>
-                        </div>
+          <div class="row">
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="offer-item">
+                      <div class="hot"><i class="fa fa-star"></i> Special offer</div>
+                    <img src="images/items/1.jpg" alt="">  
+                    <div class="offer-item-info">
+                        <span><i class="fa fa-map-marker"></i> title of offer</span>
+                        <span class="yellow-text"> <i class="fa fa-money"></i>$155.000 </span>
+                    </div>                  
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="offer-item">
+                      <img src="images/items/2.jpg" alt="">  
+                      <div class="offer-item-info">
+                          <span><i class="fa fa-map-marker"></i> title of offer</span>
+                          <span> <i class="fa fa-money"></i>$155.000 </span>
+                      </div>                  
                     </div>
                 </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#">Los Angles Apartment</a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/2.jpg" alt="" class="img-responsive">
-                            <span class="label rent">Rent</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">Detail</a>
-                            </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
-                            </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="offer-item">
+                          <img src="images/items/3.jpg" alt="">  
+                          <div class="offer-item-info">
+                              <span><i class="fa fa-map-marker"></i> title of offer</span>
+                              <span> <i class="fa fa-money"></i>$155.000 </span>
+                          </div>                  
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#">Los Angles Apartment</a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/3.jpg" alt="" class="img-responsive">
-                            <span class="label rent">Rent</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">Detail</a>
-                            </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="offer-item">
+                              <img src="images/items/4.jpg" alt="">  
+                              <div class="offer-item-info">
+                                  <span><i class="fa fa-map-marker"></i> title of offer</span>
+                                  <span> <i class="fa fa-money"></i>$155.000 </span>
+                              </div>                  
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#">Los Angles Apartment</a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/4.jpg" alt="" class="img-responsive">
-                            <span class="label hot">Hot</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">Detail</a>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                <div class="offer-item">
+                                  <img src="images/items/5.jpg" alt="">  
+                                  <div class="offer-item-info">
+                                      <span><i class="fa fa-map-marker"></i> title of offer</span>
+                                      <span> <i class="fa fa-money"></i>$155.000 </span>
+                                  </div>                  
+                                </div>
                             </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#">Los Angles Apartment</a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/5.jpg" alt="" class="img-responsive">
-                            <span class="label rent">Rent</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">Detail</a>
-                            </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#">Los Angles Apartment</a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/6.jpg" alt="" class="img-responsive">
-                            <span class="label sale">Sell</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">Detail</a>
-                            </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                    <div class="offer-item">
+                                      <img src="images/items/6.jpg" alt="">  
+                                      <div class="offer-item-info">
+                                          <span><i class="fa fa-map-marker"></i> title of offer</span>
+                                          <span> <i class="fa fa-money"></i>$155.000 </span>
+                                      </div>                  
+                                    </div>
+                                </div>
+          </div>
         </div>
 </section>
 <!-- offers -->
@@ -436,9 +343,9 @@
                              <a href="">  <img src="images/projects/1.jpg" alt=""></a> 
                         </figure>
                         <div class="project-info">
-                            <span class="price">$390,000 - $430,000</span>
                             <h4><a href="#" class="name">Avalon Clinton Apartments - Last offer live</a></h4>
                             <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                            <span class="price">$390,000 - $430,000</span>
                         </div>  
                 </div>
             </div>
@@ -448,9 +355,9 @@
                                  <a href="">  <img src="images/projects/2.jpg" alt=""></a> 
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">Avalon Clinton Apartments - Last offer live</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -460,9 +367,9 @@
                                  <a href="">   <img src="images/projects/3.jpg" alt=""></a>
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">Ingram Dayton, OH 45408</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -472,9 +379,9 @@
                                <a href="">    <img src="images/projects/4.jpg" alt=""></a> 
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">Penns Neck, NJ 08540</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -484,9 +391,9 @@
                                 <a href="">   <img src="images/projects/5.jpg" alt=""></a> 
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">Court Bellflower, CA 90706</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -496,9 +403,9 @@
                                     <a href=""><img src="images/projects/6.jpg" alt=""></a>
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">Luxury Villa In Rego Park</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -508,9 +415,9 @@
                                   <a href=""> <img src="images/projects/7.jpg" alt=""></a> 
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">Luxury Office - Last offer live</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -520,9 +427,9 @@
                                    <a href=""> <img src="images/projects/8.jpg" alt=""></a>
                             </figure>
                             <div class="project-info">
-                                <span class="price"> $430,000</span>
                                 <h4><a href="#" class="name">1B Alexander Court, Lewisham, Tas 7173</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                                <span class="price"> $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -543,31 +450,37 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-5">
                     <img src="images/logo.png" alt="">
+                    <nav class="social-footer">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-vimeo"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-skype"></i></a>
+                    </nav>
                 </div>
                 <div class="col-xs-12 col-sm-7">
-                        <ul>
+                       <div class="clearfix">
+                        <div class="col-xs-12 col-sm-4">
+                            <ol>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Properties</a></li>
                                 <li><a href="#">Services</a></li>
                                 <li><a href="#">Team</a></li>
                                 <li><a href="#">Contact Us</a></li>
-                        </ul>
+                            </ol>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <ol>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Properties</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ol>
+                        </div>
+                       </div>
                 </div>
-                <div class="col-xs-12 copy-right text-center">
-                    <div class="backtotop">
-                            <button class="btn scroltop">
-                                    <i class="fa fa-angle-up"></i>
-                            </button>
-                    </div>
-                    <p class="">Copyright © 2017 mekkeli real estate, Inc. All Right Reserved.</p>
-                    <nav class="social">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-vimeo"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-skype"></i></a>
-                        </nav>
-                </div>
+                 
             </div>
              
         </div>
