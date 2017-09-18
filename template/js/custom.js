@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
 
     // Select Box Replacements
 
-    $('select').selectBox({
+    $('select').selectBox({ 
         mobile: true,
         menuSpeed: 'fast'
     });
@@ -54,7 +54,7 @@ jQuery(document).ready(function($) {
         slide: function( event, ui ) {
             $( "#price" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
         }
-    });
+    }); 
     $( "#price" ).val( $( "#price-range" ).slider( "values", 0 ) + " - " + $( "#price-range" ).slider( "values", 1 ) );
 
     // Checkbox Replacements
@@ -94,3 +94,31 @@ if( $('.counter span') &&  $('.counter span').length > 0){
 }
 
 });
+ 
+  $(function(){
+    
+     
+    var el = $(".social-sidebar");
+    
+    
+     
+    var tTop = parseInt(el.css('top'));
+     
+    $(window).scroll(function() {
+   clearTimeout( $.data( this, "scrollCheck" ) );
+      $.data( this, "scrollCheck", setTimeout(function() {
+          if($(window).scrollTop() > tTop ){
+           el.animate({
+              top : 15+"px" 
+            }, 150);
+         }else{
+           el.animate({
+              top : tTop +"px"
+            }, 150);
+         }
+      }, 100) );
+    });
+  });
+
+
+      
