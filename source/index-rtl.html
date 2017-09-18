@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="css/style-rtl.css">
 </head>
 <body>
+        <div class="social-sidebar">
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
     <header class="main-header ">
         <div class="container">
         <div class="row">
@@ -85,22 +95,16 @@
         <li>
             <img src="images/slider1.jpg" class="img-responsive" alt="Slider Image" />
             <div class="container">
-                <div class="row">
+                <div class="clearfix">
                     <div class="col-md-12">
-                        <div class="detail">
-                            <div class="white">
-                                <h2><a href="">منزل الاحلام</a></h2>
-                                <span class="slide-location">ميامي شارع ابو زيد</span>
-                                <div class="bar"></div>
-                                <span class="slide-price">$ 1 525 000</span>
-                            </div>
-                            <div class="red">
-                                <span class="bath">3 حمام</span>
-                                <span class="bed">2 غرف</span>
-                                <span class="gym">1 صالون</span>
-                                <span class="pool">2 بلكون</span>
-                            </div>
-                        </div>
+                            <div class="slide-detail ">
+                                    <p>هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان و حجم و لون الخط حيث يتم التحكم في هذا النص وامكانية تغييرة في اي وقت عن طريق ادارة الموقع . يتم اضافة هذا النص كنص تجريبي للمعاينة فقط وهو لا يعبر عن أي موضوع محدد انما لتحديد الشكل العام للقسم او الصفحة أو الموقع.</p>
+                                    <a href="#" class="btn readmore btn-block">المزيد</a>
+                                </div>
+                                <div class="slide-title">
+                                   <h3>منزل الافراح</h3>
+                                   <h4> حجم النصوص و طريقة عرضها في هذا المكان</h4>
+                                </div>
                     </div>
                 </div>
             </div>
@@ -108,21 +112,15 @@
         <li>
             <img src="images/slider2.jpg" class="img-responsive" alt="Slider Image" />
             <div class="container">
-                <div class="row">
+                <div class="clearfix">
                     <div class="col-md-12">
-                            <div class="detail">
-                                    <div class="white">
-                                        <h2><a href="">منزل الاحلام</a></h2>
-                                        <span class="slide-location">ميامي شارع ابو زيد</span>
-                                        <div class="bar"></div>
-                                        <span class="slide-price">$ 1 525 000</span>
-                                    </div>
-                                    <div class="red">
-                                        <span class="bath">3 حمام</span>
-                                        <span class="bed">2 غرف</span>
-                                        <span class="gym">1 صالون</span>
-                                        <span class="pool">2 بلكون</span>
-                                    </div>
+                            <div class="slide-detail ">
+                                    <p>هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان و حجم و لون الخط حيث يتم التحكم في هذا النص وامكانية تغييرة في اي وقت عن طريق ادارة الموقع . يتم اضافة هذا النص كنص تجريبي للمعاينة فقط وهو لا يعبر عن أي موضوع محدد انما لتحديد الشكل العام للقسم او الصفحة أو الموقع.</p>
+                                    <a href="#" class="btn readmore btn-block">المزيد</a>
+                                </div>
+                                <div class="slide-title">
+                                   <h3>منزل الافراح</h3>
+                                   <h4> حجم النصوص و طريقة عرضها في هذا المكان</h4>
                                 </div>
                     </div>
                 </div>
@@ -133,45 +131,88 @@
 <!-- SLIDER -->
   <!-- FILTER -->
   <div class="container">
-    <div class="filter main-filter">
+        <div class="filter main-filter">
+                <h4>إبحث عن منزلك</h4>
+             <div class="clearfix">
+                 <div class="col-md-3 col-sm-4 col-xs-12">
+                     <div class="form-group">
+                         <label for="">أدخل كلمة</label>
+                         <input type="text" name="word" id=""  class="form-control" placeholder="" >
+                     </div>
+                 </div>
+                 <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                                <label for="">المدينة</label>
+                                <select class="location form-control">
+                                        <option>المدينة</option>
+                                        <option>لندن</option>
+                                        <option>باريس</option>
+                                        <option>نيورك</option>
+                                </select>
+                        </div>
+                 </div>
+                 <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                                <label for="">النوع</label>
+                                <select class="cata form-control">
+                                        <option>النوع</option>
+                                        <option>ارض</option>
+                                        <option>بناء</option>
+                                        <option>مزارع</option>
+                                </select>
+                        </div>
+                 </div>
+                 <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                                <label for="">الحالة </label>
+                                <select class="type form-control">
+                                        <option>الغرض</option>
+                                        <option>شراء</option>
+                                        <option>اجار</option>
+                                    </select>
+                        </div>
+                 </div>
+             </div>
+               <div class="clearfix">
+                   <div class="col-md-4 col-sm-4 col-xs-12">
+                        
+                        <div class="form-group">
+                                <label for="price">السعر ($)</label>
+                                <span> <input type="text" id="price" class="form-control"></span>
+                        </div>
+                   </div>
+                   <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                                <label for="area">المساحة (m2)</label>
+                                <input type="text" name="" id="" class="form-control">
+                        </div>
+                   </div>
+                   <div class="col-md-2 col-sm-2 col-xs-12">
+                        <div class="form-group">
+                                <label for="area">الغرف</label>
+                                <input type="number" name="" id="" class="form-control">
+                        </div>
+                   </div>
+                   <div class="col-md-2 col-sm-2 col-xs-12">
+                        <div class="form-group">
+                                <label for="area">الحمامات</label>
+                                <input type="number" name="" id="" class="form-control">
+                        </div>
+                   </div>
+               </div>
+               <div class="clearfix">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div id="price-range" class="m-t-15"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12"></div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 text-right">
+                            <button type="button" class="btn"><i class="fa fa-search"></i>بحث</button>
+                    </div>
+               </div>
+           
          
-            <h4>إبحث عن منزلك</h4>
-       
-        <select class="location">
-            <option>المدينة</option>
-            <option>لندن</option>
-            <option>باريس</option>
-            <option>نيورك</option>
-        </select>
-
-        <select class="cata">
-            <option>النوع</option>
-            <option>ارض</option>
-            <option>بناء</option>
-            <option>مزارع</option>
-        </select>
-
-        <select class="type">
-            <option>الغرض</option>
-            <option>شراء</option>
-            <option>اجار</option>
-        </select>
-
-        
-
-        <button type="button" class="btn"><i class="fa fa-search"></i>بحث</button>
-
-        <div class="range">
-            <p>
-              <label for="price">السعر</label>
-              <span>$ <input type="text" id="price" ></span>
-            </p>
-            <div id="price-range"></div>
         </div>
-
-        <a href="#" class="adv-srch">بحث متقدم</a>
-
-    </div>
+  
 </div>
 <!-- FILTER -->
 
@@ -179,19 +220,21 @@
     <div class="container about-section">
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-12 p-0">
+                    <h6 class="company-title">من نحن</h6>
                 <article class="company-brief">
                     <p>
                             لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض 
                             على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور 
                             او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
                     </p>
-                    <a href="" class="more">المزيد..</a>
                 </article>
+                <a href="" class="more">المزيد..</a>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 p-0">
+                    <h6 class="company-title">الدعم الفني</h6>
                 <div class="support-box">
                     <img src="images/support.jpg" alt="">
-                    <a href="">الدعم الفني</a>
+                    <a href="">اتصل بنا</a>
                 </div>
             </div>
         </div>
@@ -237,182 +280,62 @@
     </div>
     <div class="container">
             <div class="row">
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#"> بناء في الفاتح  </a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/1.jpg" alt="" class="img-responsive">
-                            <span class="label sale">بيع</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">التفاصيل</a>
-                            </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>استنبول</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
-                            </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="offer-item">
+                            <div class="hot"><i class="fa fa-star"></i> عرض مميز</div>
+                          <img src="images/items/1.jpg" alt="">  
+                          <div class="offer-item-info">
+                              <span><i class="fa fa-map-marker"></i> عنوان العقار</span>
+                              <span class="yellow-text"> <i class="fa fa-money"></i>$155.000 </span>
+                          </div>                  
                         </div>
                     </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                          <div class="offer-item">
+                            <img src="images/items/2.jpg" alt="">  
+                            <div class="offer-item-info">
+                                <span><i class="fa fa-map-marker"></i> عنوان العقار</span>
+                                <span> <i class="fa fa-money"></i>$155.000 </span>
+                            </div>                  
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4">
+                              <div class="offer-item">
+                                <img src="images/items/3.jpg" alt="">  
+                                <div class="offer-item-info">
+                                    <span><i class="fa fa-map-marker"></i> عنوان العقار</span>
+                                    <span> <i class="fa fa-money"></i>$155.000 </span>
+                                </div>                  
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 col-md-4">
+                                  <div class="offer-item">
+                                    <img src="images/items/4.jpg" alt="">  
+                                    <div class="offer-item-info">
+                                        <span><i class="fa fa-map-marker"></i> عنوان العقار</span>
+                                        <span> <i class="fa fa-money"></i>$155.000 </span>
+                                    </div>                  
+                                  </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-4 col-md-4">
+                                      <div class="offer-item">
+                                        <img src="images/items/5.jpg" alt="">  
+                                        <div class="offer-item-info">
+                                            <span><i class="fa fa-map-marker"></i> عنوان العقار</span>
+                                            <span> <i class="fa fa-money"></i>$155.000 </span>
+                                        </div>                  
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-4 col-md-4">
+                                          <div class="offer-item">
+                                            <img src="images/items/6.jpg" alt="">  
+                                            <div class="offer-item-info">
+                                                <span><i class="fa fa-map-marker"></i> عنوان العقار</span>
+                                                <span> <i class="fa fa-money"></i>$155.000 </span>
+                                            </div>                  
+                                          </div>
+                                      </div>
                 </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#">شقة في افجلار</a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/2.jpg" alt="" class="img-responsive">
-                            <span class="label rent">الاجار</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">التفاصيل</a>
-                            </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>استنبوال</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#">مجمع انوفيا15</a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/3.jpg" alt="" class="img-responsive">
-                            <span class="label rent">Rent</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">التفاصيل</a>
-                            </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>استنبوال</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#">مجمع انوفيا2</a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/4.jpg" alt="" class="img-responsive">
-                            <span class="label hot">Hot</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">التفاصيل</a>
-                            </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>استنبوال</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#">مجمع انوفيا</a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/5.jpg" alt="" class="img-responsive">
-                            <span class="label rent">اجار</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">التفاصيل</a>
-                            </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>استنبوال</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-header clearfix">
-                            <h3><a href="#">مجمع انوفيا63</a></h3>
-                           
-                        </div>
-                        <figure>
-                            <img src="images/items/6.jpg" alt="" class="img-responsive">
-                            <span class="label sale">بيع</span>
-                            <div class="overlay">
-                                <a href="#" class="btn btn-detail">التفاصيل</a>
-                            </div>
-                        </figure>
-                        <div class="item-detail">
-                            <div class="left">
-                                <span class="place"><i class="fa fa-map-marker"></i>استنبوال</span>
-                                <span class="bed">3</span>
-                                <span class="bath">2</span>
-                                <span class="garage">2</span>
-                                <span class="gym">1</span>
-                            </div>
-                            <div class="right">
-                                <span class="area">134 m2</span>
-                                <span class="price">$ 870000</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
 </section>
 <!-- offers -->
@@ -430,9 +353,9 @@
                              <a href="">  <img src="images/projects/1.jpg" alt=""></a> 
                         </figure>
                         <div class="project-info">
-                            <span class="price">$390,000 - $430,000</span>
                             <h4><a href="#" class="name">شقق أفالون كلينتون</a></h4>
                             <p class="location"><i class="fa fa-map-o"></i>نيورك 15 شارع ست الا ربع</p>
+                            <span class="price">$390,000 - $430,000</span>
                         </div>  
                 </div>
             </div>
@@ -442,9 +365,9 @@
                                  <a href="">  <img src="images/projects/2.jpg" alt=""></a> 
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">شقق أفالون كلينتون</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -454,9 +377,9 @@
                                  <a href="">   <img src="images/projects/3.jpg" alt=""></a>
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">إنغرام دايتون،</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>245 E 40th St, New York, NY 10016</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -466,9 +389,9 @@
                                <a href="">    <img src="images/projects/4.jpg" alt=""></a> 
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">مشروع NJ 08540</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>اسطنبول الجانب الاوربي</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -478,9 +401,9 @@
                                 <a href="">   <img src="images/projects/5.jpg" alt=""></a> 
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">مشروع, CA 90706</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>اسطنبول سلطان غازي, NY 10016</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -490,9 +413,9 @@
                                     <a href=""><img src="images/projects/6.jpg" alt=""></a>
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">مشروع imt225</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>اسطنبوال سلطان بيلي الجانب الاسيوي</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -502,9 +425,9 @@
                                   <a href=""> <img src="images/projects/7.jpg" alt=""></a> 
                             </figure>
                             <div class="project-info">
-                                <span class="price">$390,000 - $430,000</span>
                                 <h4><a href="#" class="name">مشروع دمر</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>انقرة دوار باب الحديد</p>
+                                <span class="price">$390,000 - $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -514,9 +437,9 @@
                                    <a href=""> <img src="images/projects/8.jpg" alt=""></a>
                             </figure>
                             <div class="project-info">
-                                <span class="price"> $430,000</span>
                                 <h4><a href="#" class="name">مشروع , Tas 7173</a></h4>
                                 <p class="location"><i class="fa fa-map-o"></i>غازي عنتاب قرطاش 2</p>
+                                <span class="price"> $430,000</span>
                             </div>  
                     </div>
              </div>
@@ -532,41 +455,47 @@
     <div id="mapcanvas" style="height:400px"></div>
 <!-- map -->
 
-<footer class="main-footer">
+  
+    <footer class="main-footer">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-5">
                     <img src="images/logo.png" alt="">
+                    <nav class="social-footer">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-vimeo"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-skype"></i></a>
+                    </nav>
                 </div>
                 <div class="col-xs-12 col-sm-7">
-                        <ul>
+                       <div class="clearfix">
+                        <div class="col-xs-12 col-sm-4">
+                            <ol>
                                 <li><a href="#">الرئيسية</a></li>
                                 <li><a href="#">المشاريع</a></li>
                                 <li><a href="#">الخدمات</a></li>
                                 <li><a href="#">الاخبار</a></li>
                                 <li><a href="#">اتصل بنا</a></li>
-                        </ul>
+                            </ol>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <ol>
+                                <li><a href="#">الرئيسية</a></li>
+                                <li><a href="#">المشاريع</a></li>
+                                <li><a href="#">الخدمات</a></li>
+                                <li><a href="#">الاخبار</a></li>
+                                <li><a href="#">اتصل بنا</a></li>
+                            </ol>
+                        </div>
+                       </div>
                 </div>
-                <div class="col-xs-12 copy-right text-center">
-                    <div class="backtotop">
-                            <button class="btn scroltop">
-                                    <i class="fa fa-angle-up"></i>
-                            </button>
-                    </div>
-                    <p class="">جميع الحقوق محفوظة . شركة مكة لي العقارية © 2017</p>
-                    <nav class="social">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-vimeo"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-skype"></i></a>
-                        </nav>
-                </div>
+                 
             </div>
              
         </div>
     </footer>
-
 
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>  
     <script src="js/scripts.js"></script>
