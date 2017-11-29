@@ -14,7 +14,8 @@ jQuery(document).ready(function($) {
     // Home Slider
 
     $('#slider').flexslider({
-        animation: "slide"
+        animation: "slide",
+		rtl:window.isRtl
     }); 
 
     // Select Box Replacements

@@ -1,5 +1,5 @@
 .flexslider.main-slider,.flexslider.main-slider .slides img {
-    height: 500px;
+    height: auto;
 }
 
 .flex-viewport {
@@ -8,7 +8,7 @@
 #slider{
     .slide-detail{
       z-index: 2;
-      @include absolute(bottom $right,0 0);
+      @include absolute(top $right,0 0);
       height: 500px;
       width: 270px;
       background: rgba($black, .6);
@@ -29,7 +29,7 @@
       }
     }
     .slide-title{
-        @include absolute(bottom $left,200px 0);
+        @include absolute(top $left,200px 0);
         background: rgba($black, .6);
         max-width: 360px;;
         color: $white;
