@@ -11,6 +11,34 @@ jQuery(document).ready(function($) {
         event.preventDefault();
     });
 
+    var offset = 250;
+    var duration = 300;
+    var ttop= ' <a href="#" class="back-to-top"> <i class="fa fa-angle-up"></i></a> ';
+    $('body').append(ttop);
+    $(window).scroll(function () {
+          if( window.pageYOffset > 250){
+              $('.main-header ').addClass('fixed-top');
+            $('body').css('padding-top',$('.main-header ').height()+'px');
+        }else{
+            $('body').css('padding-top','0');
+            $('.main-header ').removeClass('fixed-top');
+        } 
+        if ($(this).scrollTop() > offset) {
+            $(".back-to-top").fadeIn(duration);
+        } else {
+
+            $(".back-to-top").fadeOut(duration);
+        }
+    });
+    $(".back-to-top").click(function (event) {
+        event.preventDefault();
+        $("html, body").animate({ 
+            scrollTop: 0
+        }, duration);
+        return false;
+    })
+
+
     // Home Slider
 
     $('#slider').flexslider({
@@ -110,7 +138,7 @@ if( $('.counter span') &&  $('.counter span').length > 0){
       $.data( this, "scrollCheck", setTimeout(function() {
           if($(window).scrollTop() > tTop ){
            el.animate({
-              top : 15+"px" 
+              top : $('.main-header ').height() + 5 +"px" 
             }, 150);
          }else{
            el.animate({

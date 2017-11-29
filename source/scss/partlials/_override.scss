@@ -105,7 +105,7 @@ $x :5;
  
 }
 .page-wrap{
-    background: url(../images/logo-bg.png) 0 50% no-repeat;
+    // background: url(../images/logo-bg.png) 0 50% no-repeat;
 }
 #lightSlider{
     li,li img{
@@ -317,4 +317,18 @@ $x :5;
       }
     }
   }
+}
+.back-to-top {
+  position: fixed;
+  #{$right}: 15px;
+  bottom: 15px;
+  width: 40px;
+  height: 40px;
+  background: rgba($brown, .7);
+  color: $black;
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+  display: none;
+  z-index: 15000;
 }

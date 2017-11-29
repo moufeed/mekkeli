@@ -1,5 +1,19 @@
 .main-header{
-        
+            &.fixed-top{
+                @include fixed(top left , 0 0);
+                z-index: 2500;
+                width: 100%;
+                min-height: 52px;
+                .social{
+                    display: none;
+                }
+                .search-box,.logo{
+                    margin:5px 0;
+                }
+                .logo img{
+                    height: 60px;
+                }
+            }
     .search-box{
         float: $right;
         text-align: center;
